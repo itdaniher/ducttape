@@ -55,7 +55,7 @@ define [], ->
                     display div
                     editFinished)
                 ((changedText) -> JSON.parse changedText)
-            ], corelib.require ['deps/js-beautify/beautify.js']
+            ], corelib.require ['node_modules/js-beautify/beautify.js']
             # Previous line makes sure jsbeatuify has loaded.
             # Contents of the file loads from cache on subsequent calls.
             s.toHTML = -> null

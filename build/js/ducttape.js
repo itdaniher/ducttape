@@ -581,7 +581,7 @@
           var _this = this;
           return $('#menuhelp').click(function(ev) {
             lib.captureEvent(ev);
-            lib.run("(" + (dt.symbol()) + " 'o help:help').value()");
+            lib.run("" + (dt.symbol()) + ".help 'intro'");
             return false;
           });
         };
@@ -2006,7 +2006,7 @@
           }), (function(changedText) {
             return JSON.parse(changedText);
           })
-        ], corelib.require(['deps/js-beautify/beautify.js']));
+        ], corelib.require(['node_modules/js-beautify/beautify.js']));
         s.toHTML = function() {
           return null;
         };

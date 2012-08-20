@@ -1,5 +1,7 @@
+rm -rf build
+
 COFFEE=coffee
-RJS=deps/requirejs/r.js
+RJS=node_modules/requirejs/bin/r.js
  
 $COFFEE -o src/js -c `find src/coffee/ -name "*.coffee"`
 node $RJS -o src/app.build.js
