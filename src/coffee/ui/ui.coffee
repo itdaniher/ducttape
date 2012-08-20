@@ -133,7 +133,7 @@ define ['corelib'], (corelib) ->
             init_ui: () ->
                 $('#menuhelp').click (ev) =>
                     lib.captureEvent ev
-                    lib.run "(#{ dt.symbol() } 'o help:help').value()"
+                    lib.run "#{ dt.symbol() }.help 'intro'"
                     false
             updateGeneratedJS: ->
                 $('#jsSource pre').text(@js_source)
